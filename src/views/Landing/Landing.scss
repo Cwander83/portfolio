@@ -1,0 +1,60 @@
+@import '../../styles//shared.scss';
+
+.landing {
+	width: 100%;
+	height: auto;
+
+	.landing-title {
+		font-size: 180px;
+		text-align: center;
+		line-height: normal;
+		color: $teal;
+		line-height: 160px;
+		width: 100%;
+	}
+	.landing-subtitle {
+		text-align: center;
+		font-family: $title;
+		color: $grey;
+		margin: 30px auto 0 auto;
+		width: 100%;
+	}
+	.landing-text-list {
+		list-style-type: none;
+		width: 35%;
+		color: $grey;
+		margin: 60px auto 0 auto;
+		letter-spacing: 1.4px;
+		font-weight: 600;
+		line-height: 26px;
+		font-size: 18px;
+		padding-left: 15%;
+
+		i {
+			color: $smokeTeal;
+		}
+		.text-list-li {
+			margin: 20px 0;
+
+			a {
+				font-size: 18px;
+				text-decoration: none;
+				color: $smokeTeal;
+				i {
+					padding: 3px;
+					color: $smokeTeal;
+				}
+			}
+			a:focus,
+			a:active {
+				font-size: 18px;
+				color: $grey;
+				i {
+					background-color: $smokeTeal;
+					color: $grey;
+					padding: 3px;
+				}
+			}
+		}
+	}
+}
