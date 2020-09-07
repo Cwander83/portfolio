@@ -8,28 +8,17 @@
 	width: 100%;
 	min-height: 100%;
 	height: auto;
-
 	font-family: $font;
 	text-transform: uppercase;
 	.layout {
 		background-color: rgba(0, 0, 0, 0.7);
 		width: 100%;
 		height: 100%;
+		max-width: 1440px;
+		margin: auto;
 	}
 	h1 {
 		color: $teal;
 	}
 }
 
-@media only screen and (max-width: 460px) {
-	.App {
-		.layout {
-			background-color: rgba(0, 0, 0, 0.7);
-			width: 100%;
-			height: 100%;
-		}
-		h1 {
-			color: $teal;
-		}
-	}
-}

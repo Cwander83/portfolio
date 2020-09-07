@@ -3,7 +3,7 @@
 .wrapper {
 	width: 100%;
 	margin: auto;
-	height: auto;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -37,13 +37,32 @@
 
 	.about {
 		p {
-			width: 80%;
+			
+			width: 100%;
 			text-align: left;
 			color: white;
 			line-height: 1.8em;
 			letter-spacing: 0.12em;
 			text-transform: none;
-			margin: auto auto 30px auto;
+			margin: auto 0 30px auto;
+			padding-left: 10px;
+		}
+	}
+	.tools {
+		ul {
+			margin-top: 60px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			list-style-type: none;
+			align-items: baseline;
+
+			li {
+					color: white;
+				i {
+					font-size: 36px;
+				}
+			}
 		}
 	}
 }
@@ -56,6 +75,25 @@
 		}
 		section {
 			width: 80%;
+		}
+		.tools {
+			ul {
+				margin-top: 60px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+				list-style-type: none;
+				align-items: baseline;
+	
+				li {
+						color: white;
+						margin-right: 35px;
+					i {
+						font-size: 36px;
+					}
+				}
+			}
 		}
 	}
 }

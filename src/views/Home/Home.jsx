@@ -15,40 +15,26 @@ const Home = () => {
 					help make them a success.
 				</p>
 				<p>
-					With over 3 years of experience, I use the most up-to-date frameworks
+					With over 3 years of experience, I use the most up-to-date tools of the trade
 					to create fun and user friendly websites.
 				</p>
 			</section>
 
-			<section className="experience">
-				<h4>tools of trade</h4>
-
-				<p>front-end: HTML5, CSS3, SASS, Javascript, Node.JS</p>
-				<p>Javascript frameworks: React.JS, Vue.JS, Angular 6+, jQuery.JS</p>
-				<p>CSS frameworks: Bootstrap, Material-UI,Materialize-CSS</p>
-				<p>Back-end: </p>
-
+			<section className="tools">
 				<ul>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>SASS</li>
-					<li>Bootstrap</li>
-					<li>Material-UI</li>
-					<li>Javascript</li>
-					<li>jQuery</li>
-					<li>Node.JS</li>
-					<li>Vue.JS</li>
-					<li>React.JS</li>
-					<li>Angular 6+</li>
-					<li>MongoDB</li>
-					<li>mySQL</li>
-					<li>PostgreSQL</li>
-					<li>Firebase</li>
+					<li><i className="fab fa-react"></i> React.js</li>
+					
+					<li><i className="fab fa-vuejs"></i> Vue.js</li>
+					<li><i className="fab fa-node-js"></i> Node.js</li>
+					<li><i className="fab fa-java"></i> Java</li>
+					<li><i className="fab fa-python"></i> Python</li>
+					<li><i className="fab fa-css3-alt"></i> CSS</li>
+					<li><i className="fab fa-html5"></i> HTML</li>
 				</ul>
+
+				
 			</section>
-			<section className="school">
-				<h4>school</h4>
-			</section>
+			
 		</div>
 	);
 };
