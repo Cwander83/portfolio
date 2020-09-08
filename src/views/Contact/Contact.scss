@@ -1,0 +1,66 @@
+@import '../../styles/shared.scss';
+
+.contact-wrapper {
+	width: 100%;
+	height: auto;
+	.form-container {
+		width: 50%;
+		height: auto;
+		margin: 40px auto auto auto;
+		background-color: rgba(0, 0, 0, 0.4);
+		// border: 1px solid white;
+		.row {
+			width: 100%;
+			text-align: center;
+			i.far {
+				color: $teal;
+
+				margin: auto;
+				text-align: center;
+				font-size: 60px;
+				padding: 20px;
+				padding-left: 11px;
+				border-radius: 50%;
+			}
+		}
+
+		form {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			label {
+				width: 100%;
+				margin: 20px auto;
+				color: white;
+				text-align: start;
+			}
+			input,
+			input:active,
+			input:focus {
+				float: right;
+				width: 80%;
+				border: none;
+				border-bottom: 1px solid $teal;
+				background-color: transparent;
+				color: white;
+				font-size: 16px;
+				box-shadow: none;
+				outline: none;
+				padding: 10px 20px;
+				margin-left: auto;
+			}
+
+			input:-webkit-autofill,
+			input:-webkit-autofill:hover,
+			input:-webkit-autofill:focus {
+				color: white;
+				border: none;
+				-webkit-text-fill-color: white;
+				box-shadow: none;
+				transition: background-color 5000s ease-in-out 0s;
+				border-bottom: 1px solid $teal;
+			}
+		}
+	}
+}
