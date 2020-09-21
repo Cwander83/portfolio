@@ -10,41 +10,41 @@ const Contact = () => {
 
 	const onSubmit = (data, e) => {
 		e.preventDefault();
-		axios({
-			method: 'POST',
-			url: '/mail/send',
-			data: data,
-		})
-			.then((response) => {
-				if (response.data.status === 'success') console.log('email sent');
-				if (response.data.status === 'fail')
-					console.log('email failed to send', response.data.status);
-			})
-			.catch((err) => console.error(err));
+		// axios({
+		// 	method: 'POST',
+		// 	url: '/mail/send',
+		// 	data: data,
+		// })
+		// 	.then((response) => {
+		// 		if (response.data.status === 'success') console.log('email sent');
+		// 		if (response.data.status === 'fail')
+		// 			console.log('email failed to send', response.data.status);
+		// 	})
+		// 	.catch((err) => console.error(err));
 	};
 
 	return (
 		<div className="contact-wrapper">
 			<div className="form-container">
 				<div className="row">
-					<i className="far fa-paper-plane"></i>
-					<h3>Send me a message</h3>
+					
+					<h3>Send me a message<i className="far fa-paper-plane"></i></h3>
 				</div>
 
 				<form onSubmit={handleSubmit(onSubmit)}>
-					<label>Name:</label>
+					<label>Name</label>
 					<input type="text" name="name" id="name" ref={register} />
 
-					<label>Email:</label>
+					<label>Email</label>
 					<input type="email" name="email" id="email" ref={register} />
 
-					<label>Phone Number:</label>
+					<label>Phone Number</label>
 					<input type="tel" name="phone" id="phone" ref={register} />
 
-					<label>Your Message:</label>
+					<label>Message</label>
 					<input type="text" name="message" id="message" ref={register} />
 
-					<button type="submit">contact me</button>
+					<span type="submit">Submit <i className="fas fa-arrow-right"></i></span>
 				</form>
 			</div>
 		</div>

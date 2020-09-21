@@ -6,21 +6,23 @@
 	.form-container {
 		width: 50%;
 		height: auto;
-		margin: 40px auto auto auto;
+		margin: auto;
 		background-color: rgba(0, 0, 0, 0.4);
 		// border: 1px solid white;
 		.row {
 			width: 100%;
 			text-align: center;
-			i.far {
+			h3 {
+				font-size: 24px;
 				color: $teal;
-
-				margin: auto;
-				text-align: center;
-				font-size: 60px;
-				padding: 20px;
-				padding-left: 11px;
-				border-radius: 50%;
+				i.far {
+					margin: auto;
+					text-align: center;
+					font-size: 24px;
+					padding: 20px;
+					padding-left: 11px;
+					border-radius: 50%;
+				}
 			}
 		}
 
@@ -31,23 +33,24 @@
 			width: 100%;
 			label {
 				width: 100%;
-				margin: 20px auto;
+				margin: 10px auto;
 				color: white;
-				text-align: start;
+				text-align: center;
 			}
 			input,
 			input:active,
 			input:focus {
+				text-align: center;
 				float: right;
-				width: 80%;
+				width: 100%;
 				border: none;
 				border-bottom: 1px solid $teal;
 				background-color: transparent;
 				color: white;
-				font-size: 16px;
+				font-size: 20px;
 				box-shadow: none;
 				outline: none;
-				padding: 10px 20px;
+				padding: 10px 0;
 				margin-left: auto;
 			}
 
@@ -60,6 +63,34 @@
 				box-shadow: none;
 				transition: background-color 5000s ease-in-out 0s;
 				border-bottom: 1px solid $teal;
+			}
+			span {
+				width: auto;
+				margin: 30px 25px 10px auto;
+				box-shadow: none;
+				background-color: transparent;
+				color: $grey;
+				border-bottom: none;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				font-size: 20px;
+				cursor: pointer;
+				text-transform: uppercase;
+			}
+			span::after {
+				content: '';
+				display: block;
+				width: 0;
+				height: 2px;
+				background: $teal;
+				transition: width 0.4s;
+			}
+			span:hover::after {
+				width: 100%;
+			}
+			span:active {
+				color: $teal;
 			}
 		}
 	}
