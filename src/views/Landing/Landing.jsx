@@ -36,6 +36,29 @@ const Landing = React.memo(() => {
 					</Link>
 				</li>
 			</ul>
+			<ul className="landing-text-list-mobile">
+				<li className="text-list-li">
+					<i className="fas fa-terminal"></i> full stack developer
+				</li>
+				<li className="text-list-li">
+					<i className="fas fa-dumbbell"></i> avid gym enthusiast
+				</li>
+				<li className="text-list-li">
+					<i className="fas fa-pepper-hot"></i> taco connoisseur
+				</li>
+				<li className="text-list-li">
+					<i className="fas fa-football-ball"></i> sports fanatic
+				</li>
+				<li className="text-list-li">
+					<i className="fas fa-anchor"></i> kayak owner
+				</li>
+
+				<li className="text-list-li">
+					<Link className="landing-home-link" to="/home">
+						Home page <i className="fas fa-arrow-right"></i>
+					</Link>
+				</li>
+			</ul>
 		</div>
 	);
 });
