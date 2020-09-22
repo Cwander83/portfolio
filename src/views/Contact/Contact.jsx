@@ -6,7 +6,9 @@ import axios from 'axios';
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
-	const { register, handleSubmit, errors } = useForm();
+	const { register, handleSubmit, 
+		//errors
+	 } = useForm();
 
 	const onSubmit = (data, e) => {
 		e.preventDefault();

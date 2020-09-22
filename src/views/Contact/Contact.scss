@@ -95,3 +95,16 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 460px) {
+	.contact-wrapper {
+		.form-container {
+			width: 80%;
+			.row {
+				h3 {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}
