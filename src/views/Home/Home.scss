@@ -37,7 +37,6 @@
 
 	.about {
 		p {
-			
 			width: 100%;
 			text-align: left;
 			color: white;
@@ -56,9 +55,11 @@
 			justify-content: space-evenly;
 			list-style-type: none;
 			align-items: baseline;
+			opacity: 1;
+			transition: ease-in opacity 5s;
 
 			li {
-					color: white;
+				color: white;
 				i {
 					font-size: 36px;
 				}
@@ -85,10 +86,10 @@
 				justify-content: space-evenly;
 				list-style-type: none;
 				align-items: baseline;
-	
+
 				li {
-						color: white;
-						margin-right: 35px;
+					color: white;
+					margin-right: 35px;
 					i {
 						font-size: 36px;
 					}
