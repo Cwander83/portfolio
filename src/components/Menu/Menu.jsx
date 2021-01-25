@@ -12,7 +12,7 @@ const Menu = React.memo(() => {
 	React.useEffect(() => () => {}, [menu]);
 	return (
 		<div className={menu ? 'menu' : 'menu-hidden'}>
-			<CSSTransition in={menu} timeout={1000} classNames="fade">
+			<CSSTransition in={menu} timeout={400} classNames="fade">
 				<div className="menu-container">
 					<span className="menu-button">menu</span>
 					<img className="header-image " src={HeaderImage} alt="paint" />

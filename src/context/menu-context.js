@@ -1,9 +1,6 @@
 import React from 'react';
 
-export const MenuContext = React.createContext({
-	menu: null,
-	menuHandler: () => {},
-});
+export const MenuContext = React.createContext();
 
 // Provider
 const MenuProvider = (props) => {
@@ -14,9 +11,8 @@ const MenuProvider = (props) => {
 	return (
 		<MenuContext.Provider
 			value={{
-				menuHandler: menuHandler,
-
-				menu: menu,
+				menuHandler,
+				menu,
 			}}
 		>
 			{props.children}
