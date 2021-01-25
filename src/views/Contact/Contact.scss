@@ -66,10 +66,10 @@
 			}
 			span {
 				width: auto;
-				margin: 30px 25px 10px auto;
+				margin: 40px auto;
 				box-shadow: none;
 				background-color: transparent;
-				color: $grey;
+				color: $teal;
 				border-bottom: none;
 				border-top: none;
 				border-left: none;
@@ -77,6 +77,7 @@
 				font-size: 20px;
 				cursor: pointer;
 				text-transform: uppercase;
+			
 			}
 			span::after {
 				content: '';
@@ -90,7 +91,7 @@
 				width: 100%;
 			}
 			span:active {
-				color: $teal;
+				color: $smokeTeal;
 			}
 		}
 	}

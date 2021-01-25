@@ -12,8 +12,10 @@ const Landing = React.memo(() => {
 				<h2 className="landing-title">Hello</h2>
 				<h2 className="landing-subtitle">chris here </h2>
 			</Typist>
+			
 			<Link className="landing-button" to="/home">
-				Home Page
+				Enter here
+				<i className="fas fa-arrow-right"></i>
 			</Link>
 			{/* <ul className="landing-text-list fade-in">
 				<li className="text-list-li">

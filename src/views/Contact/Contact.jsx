@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Contact.scss';
 
-import axios from 'axios';
+//import axios from 'axios';
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
