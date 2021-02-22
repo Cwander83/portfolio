@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 
 import './Menu.scss';
 
-import { HeaderImage } from '../../images';
+import HeaderImage from '../../images/header-center.png';
 import { MenuContext } from '../../context/menu-context';
 
 const Menu = React.memo(() => {

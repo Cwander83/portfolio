@@ -1,27 +1,25 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import './Projects.scss';
 
-import { Taco, HJM, Grid } from '../../images';
+import Taco from '../../images/tacotest.jpg';
+import HJM from '../../images/hjm.jpg';
+import Grid from '../../images/aggrid.jpg';
 
 const projects = [
-	{
-		name: 'Taco Test',
-		url: 'https://cwander83.github.io/taco_test/',
-		github: 'https://github.com/Cwander83/taco_test',
-		image: Taco,
-		description: `This site was built with React v16 w/ hooks connected to firebase database
-
-    it uses firebase email/password authentication to access the database
-    
-    then saves data, for the next time user returns.`,
-	},
 	{
 		name: 'HJM Janitorial Company',
 		url: 'https://www.hjmjanitorial.com',
 		github: 'https://github.com/Cwander83/hjm-react',
 		image: HJM,
 		description: `This is a company page for a Commercial Janitorial Company in the Central Florida Area. They also sell Bissell Commercial products. `,
+	},
+	{
+		name: 'Taco Test',
+		url: 'https://cwander83.github.io/taco_test/',
+		github: 'https://github.com/Cwander83/taco_test',
+		image: Taco,
+		description: `This site was built with React v16 w/ hooks connected to firebase database. It uses firebase email/password authentication to access the database then saves data, for the next time user returns.`,
 	},
 	{
 		name: 'SpaceX Launches',
@@ -44,11 +42,16 @@ const Projects = () => {
 								<img src={project.image} alt="" />
 							</div>
 							<div className="col-2">
-                <h3>{project.name}</h3>
-                <h3>{project.url}</h3>
-                <h3>{project.github}</h3>
-                <h3>{project.description}</h3>
-              </div>
+								<h3 className="title">{project.name}</h3>
+
+								<a className="site-url" href={project.url}>
+									{project.url}
+								</a>
+								<a 
+								href={project.github}
+								className="site-github">{project.github}</a>
+								<p className="site-description">{project.description}</p>
+							</div>
 						</div>
 					);
 				})}
@@ -57,4 +60,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default memo(Projects);

@@ -50,14 +50,14 @@ const Home = () => {
 					})}
 				</ul>
 			</section>
-			<section className="languages">
+			{/* <section className="languages">
 				<h2>Programming Languages</h2>
 				<ul>
 					{languages.map((ele, i) => {
 						return <li key={i}>{ele}</li>;
 					})}
 				</ul>
-			</section>
+			</section> */}
 			<section className="languages">
 				<h2>Databases</h2>
 				<ul>
