@@ -64,12 +64,20 @@
 				transition: background-color 5000s ease-in-out 0s;
 				border-bottom: 1px solid $teal;
 			}
-			span {
+
+			.error {
+				color: red;
+				margin: auto;
+				text-align: center;
+				font-size: 12px;
+				padding-top: 0.3rem;
+			}
+			button {
 				width: auto;
-				margin: 30px 25px 10px auto;
+				margin: 40px auto;
 				box-shadow: none;
 				background-color: transparent;
-				color: $grey;
+				color: $teal;
 				border-bottom: none;
 				border-top: none;
 				border-left: none;
@@ -78,7 +86,7 @@
 				cursor: pointer;
 				text-transform: uppercase;
 			}
-			span::after {
+			button::after {
 				content: '';
 				display: block;
 				width: 0;
@@ -86,11 +94,11 @@
 				background: $teal;
 				transition: width 0.4s;
 			}
-			span:hover::after {
+			button:hover::after {
 				width: 100%;
 			}
-			span:active {
-				color: $teal;
+			button:active {
+				color: $smokeTeal;
 			}
 		}
 	}

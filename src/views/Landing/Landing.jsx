@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Typist from 'react-typist';
 
 import './Landing.scss';
 
 const Landing = React.memo(() => {
 	return (
 		<div className="landing">
-			<h2 className="landing-title">Hello</h2>
-			<h2 className="landing-subtitle">chris here </h2>
-			<ul className="landing-text-list">
+			<Typist>
+				<Typist.Delay count={6} ms={1500} />
+				<h2 className="landing-title">Hello</h2>
+				<h2 className="landing-subtitle">chris here </h2>
+			</Typist>
+			
+			<Link className="landing-button" to="/home">
+				Enter here
+				<i className="fas fa-arrow-right"></i>
+			</Link>
+			{/* <ul className="landing-text-list fade-in">
 				<li className="text-list-li">
 					<i className="fas fa-terminal"></i> full stack developer
 				</li>
@@ -35,7 +44,8 @@ const Landing = React.memo(() => {
 						Home page <i className="fas fa-arrow-right"></i>
 					</Link>
 				</li>
-			</ul>
+			</ul> */}
+			{/* 
 			<ul className="landing-text-list-mobile">
 				<li className="text-list-li">
 					<i className="fas fa-terminal"></i> full stack developer
@@ -58,7 +68,8 @@ const Landing = React.memo(() => {
 						Home page <i className="fas fa-arrow-right"></i>
 					</Link>
 				</li>
-			</ul>
+			</ul> 
+					*/}
 		</div>
 	);
 });

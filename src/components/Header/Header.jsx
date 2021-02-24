@@ -1,7 +1,11 @@
 import React, { useContext } from 'react';
 
 import './Header.scss';
-import { HeaderImage, Github, Linkedin, Facebook } from '../../images';
+
+import HeaderImage from '../../images/header-center.png';
+import Github from '../../images/icons/github.png';
+import Facebook from '../../images/icons/facebook.png';
+import Linkedin from '../../images/icons/linkedin.png';
 
 // context api
 import { MenuContext } from '../../context/menu-context';
