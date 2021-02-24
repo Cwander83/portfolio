@@ -14,7 +14,7 @@ const jsFrameworks = [
 const cssFrameworks = ['TailwindCSS', 'MaterialUi', 'Bootstrap', ''];
 const backendFrameworks = ['Express', 'Sequelize', 'Mongoose', 'Node'];
 const databases = ['MongoDb', 'MySql', 'PostgreSql'];
-const languages = ['Javascript', 'Java', 'Python', 'PHP'];
+//const languages = ['Javascript', 'Java', 'Python', 'PHP'];
 
 const Home = () => {
 	return (

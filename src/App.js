@@ -9,7 +9,7 @@ import routes from './routes/routes';
 
 // components
 import Header from './components/Header/Header';
-import Menu from './components/Menu/Menu'
+import Menu from './components/Menu/Menu';
 
 // context
 import MenuProvider from './context/menu-context';

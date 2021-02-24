@@ -64,7 +64,15 @@
 				transition: background-color 5000s ease-in-out 0s;
 				border-bottom: 1px solid $teal;
 			}
-			span {
+
+			.error {
+				color: red;
+				margin: auto;
+				text-align: center;
+				font-size: 12px;
+				padding-top: 0.3rem;
+			}
+			button {
 				width: auto;
 				margin: 40px auto;
 				box-shadow: none;
@@ -77,9 +85,8 @@
 				font-size: 20px;
 				cursor: pointer;
 				text-transform: uppercase;
-			
 			}
-			span::after {
+			button::after {
 				content: '';
 				display: block;
 				width: 0;
@@ -87,10 +94,10 @@
 				background: $teal;
 				transition: width 0.4s;
 			}
-			span:hover::after {
+			button:hover::after {
 				width: 100%;
 			}
-			span:active {
+			button:active {
 				color: $smokeTeal;
 			}
 		}

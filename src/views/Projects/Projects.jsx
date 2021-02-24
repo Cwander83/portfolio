@@ -34,6 +34,7 @@ const Projects = () => {
 	return (
 		<div className="project-wrapper">
 			<h1>My Work</h1>
+			<div className="divider"></div>
 			<section>
 				{projects.map((project, i) => {
 					return (
@@ -43,13 +44,15 @@ const Projects = () => {
 							</div>
 							<div className="col-2">
 								<h3 className="title">{project.name}</h3>
-
-								<a className="site-url" href={project.url}>
-									{project.url}
-								</a>
-								<a 
-								href={project.github}
-								className="site-github">{project.github}</a>
+								<p>
+									<a className="site-url" href={project.url}>
+										Hosted Link<i className="fas fa-external-link-alt"></i>
+									</a>
+									<span>&bull;</span>
+									<a href={project.github} className="site-github">
+										Github Repo<i className="fas fa-external-link-alt"></i>
+									</a>
+								</p>
 								<p className="site-description">{project.description}</p>
 							</div>
 						</div>
