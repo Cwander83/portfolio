@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 // sass
 import './App.scss';
@@ -16,7 +16,8 @@ import MenuProvider from './context/menu-context';
 
 function App() {
 	return (
-		<Router>
+		// <Router>
+		<HashRouter>
 			<div className="App">
 				<MenuProvider>
 					<Menu />
@@ -26,7 +27,7 @@ function App() {
 					</div>
 				</MenuProvider>
 			</div>
-		</Router>
+		</HashRouter>
 	);
 }
 
